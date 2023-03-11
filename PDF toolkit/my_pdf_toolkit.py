@@ -1,6 +1,9 @@
-import os
-import string
-from PyPDF2 import PdfReader, PdfWriter, PdfMerger
+try:
+    import os
+    import string
+    from PyPDF2 import PdfReader, PdfWriter, PdfMerger
+except Exception as e:
+    print(e)
 
 
 class Python_PDF_Toolkit:

@@ -61,25 +61,37 @@ import random
 # print("Odd List: ", oddList)
 # print("-" * 30)
 
-import logging
+# import logging
 
 
-def log_function_call(func):
-    def decorated(*args, **kwargs):
-        logging.info(
-            f"Calling {func.__name__} with args={args}, kwargs={kwargs}")
-        print(f"Calling {func.__name__} with args={args}, kwargs={kwargs}")
-        result = func(*args, **kwargs)
-        logging.info(f"{func.__name__} returned {result}")
-        print(f"{func.__name__} returned {result}")
-        return result
-    return decorated
+# def log_function_call(func):
+#     def decorated(*args, **kwargs):
+#         logging.info(
+#             f"Calling {func.__name__} with args={args}, kwargs={kwargs}")
+#         print(f"Calling {func.__name__} with args={args}, kwargs={kwargs}")
+#         result = func(*args, **kwargs)
+#         logging.info(f"{func.__name__} returned {result}")
+#         print(f"{func.__name__} returned {result}")
+#         return result
+#     return decorated
 
 
-@log_function_call
-def add(a, b):
-    print(a + b)
-    # return a + b
+# @log_function_call
+# def add(a, b):
+#     print(a + b)
+#     # return a + b
 
 
-add(1, 2)
+# add(1, 2)
+from datetime import datetime
+
+
+# def convert(date_time):
+#     format = '%b %d %Y %I:%M%p'  # The format
+#     datetime_str = datetime.datetime.strptime(date_time, format)
+#     return datetime_str
+
+
+# convert("2023-02-22T21: 03: 18Z")
+d = datetime.strptime('2022-02-18T00:00:00.000Z', '%Y-%m-%dT%H:%M:%S.%f%z')
+print(d.strftime("%Y-%m-%d-%H:%M:%S"))
