@@ -26,12 +26,13 @@ print(f"Local Time: {local_time}, Local Date: {local_date}, {gmtdiff}, {timezone
 print("-" * 30)
 
 # https://docs.python.org/3/library/time.html#time.strftime
+print(hours)
 
-if (hours > 4 < 12):
+if (hours > 4 and hours < 12):
     print("\nGood Morning Buddy")
-elif (hours > 12 < 18):
+elif (hours > 12 and hours < 18):
     print("\nGood Afternoon Buddy")
-elif (hours > 18 < 21):
+elif (hours > 18 and hours < 21):
     print("\nGood Evening Buddy")
-elif (hours > 21 < 4):
+elif (hours > 21 and hours < 4):
     print("\nGood Night Buddy")
