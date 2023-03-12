@@ -1,5 +1,5 @@
-from functools import reduce
-import random
+# from functools import reduce
+# import random
 
 # # print("Hello world")
 
@@ -63,7 +63,6 @@ import random
 
 # import logging
 
-
 # def log_function_call(func):
 #     def decorated(*args, **kwargs):
 #         logging.info(
@@ -83,6 +82,7 @@ import random
 
 
 # add(1, 2)
+
 from datetime import datetime
 
 
@@ -93,5 +93,7 @@ from datetime import datetime
 
 
 # convert("2023-02-22T21: 03: 18Z")
-d = datetime.strptime('2022-02-18T00:00:00.000Z', '%Y-%m-%dT%H:%M:%S.%f%z')
-print(d.strftime("%Y-%m-%d-%H:%M:%S"))
+# d = datetime.strptime('2022-02-18T00:00:00.000Z', '%Y-%m-%dT%H:%M:%S.%f%z')
+# print(d.strftime("%Y-%m-%d-%H:%M:%S"))
+
+
